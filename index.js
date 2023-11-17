@@ -10,11 +10,11 @@ const url1 = `http://api.openweathermap.org/geo/1.0/direct?q=${Q},${COUNTRY}&lim
 
 const ex01 = async () => {
     const result1 = (await axios.get(url1)).data
-    let latitude = result1[0]['lat']
-    let longitude = result1[0]['lon']
+    let lat = result1[0]['lat']
+    let lon = result1[0]['lon']
     console.log('\nexercício com async e await\n')
-    console.log(`Latitude da cidade ${Q}: ${latitude}`)
-    console.log(`Longitude da cidade ${Q}: ${longitude}`)
+    console.log(`Latitude da cidade ${Q}: ${lat}`)
+    console.log(`Longitude da cidade ${Q}: ${lon}`)
     console.log("*****************************")
 
     const ex02 = async () => {
